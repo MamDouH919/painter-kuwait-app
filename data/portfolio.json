@@ -1,0 +1,47 @@
+[
+    {
+        "title": "صباغ",
+        "image": "portfolio/صباغ-الكويت.webp",
+        "isMain": true
+    },
+    {
+        "title": "جميع اعمل الاصباغ والتاسيس",
+        "image": "portfolio/اصباغ-الكويت.webp",
+        "isMain": false
+    },
+    {
+        "title": "صبغ ايطالى",
+        "image": "portfolio/صباغ-حولي.jpeg",
+        "isMain": false
+    },
+    {
+        "title": "صبغ لامع و مطفى",
+        "image": "portfolio/صباغ-رخيص.webp",
+        "isMain": true
+    },
+    {
+        "title": "اصباغ جوتن",
+        "image": "portfolio/صباغ-شاطر.webp",
+        "isMain": false
+    },
+    {
+        "title": "اصباغ GTC",
+        "image": "portfolio/صباغ.jpeg",
+        "isMain": false
+    },
+    {
+        "title": "عازل الأسطح بجميع أنواعه",
+        "image": "portfolio/اصباغ.webp",
+        "isMain": true
+    },
+    {
+        "title": "جبس بورد",
+        "image": "portfolio/صباغ-المهبولة.webp",
+        "isMain": true
+    },
+    {
+        "title": "ديكورات وبرويز",
+        "image": "portfolio/صباغ-المنطقة-العاشرة.webp",
+        "isMain": true
+    }
+]
