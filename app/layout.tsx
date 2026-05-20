@@ -13,7 +13,7 @@ const ThemeProv = dynamic(() => import("@/context/ThemeProv"));
 const cairo = Cairo({ weight: ["600", "700", "800"], subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "صباغ الكويت - 90998489 - صباغ شاطر ورخيص",
+  title: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص`,
   description: "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية بجودة عالية وبأسعار تنافسية في جميع مناطق الكويت.",
   robots: "index,follow",
   keywords: "صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     authors: ["صباغ الكويت", `${siteUrl}`],
     locale: "ar_AR",
     url: `${siteUrl}`,
-    title: "صباغ الكويت - 90998489 - صباغ شاطر ورخيص",
+    title: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص`,
     description: "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية بجودة عالية وبأسعار تنافسية.",
     images: [
       {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "صباغ الكويت - 90998489 - صباغ شاطر ورخيص",
+    title: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص`,
     description: "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية بجودة عالية في جميع مناطق الكويت.",
     images: `${siteUrl}/صباغ-الكويت.webp`,
   },
@@ -97,7 +97,7 @@ export default function RootLayout({
                     "@type": "WebPage",
                     "@id": `${siteUrl}/`,
                     "url": `${siteUrl}/`,
-                    "name": "صباغ الكويت - 90998489 - صباغ شاطر ورخيص",
+                    "name": `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص`,
                     "isPartOf": { "@id": `${siteUrl}#website` },
                     "primaryImageOfPage": { "@id": `${siteUrl}/#primaryimage` },
                     "image": { "@id": `${siteUrl}/#primaryimage` },
@@ -717,7 +717,7 @@ export default function RootLayout({
                     "@id": `${siteUrl}/#website`,
                     "url": `${siteUrl}/`,
                     "name": "صباغ الكويت",
-                    "description": "صباغ الكويت 90998489 تركيب ورق جدران اصباغ الكوت صباغ شاطر ورخيص",
+                    "description": `صباغ الكويت ${process.env.NEXT_PUBLIC_PHONE} تركيب ورق جدران اصباغ الكوت صباغ شاطر ورخيص`,
                     "potentialAction": [
                       {
                         "@type": "SearchAction",
@@ -755,7 +755,7 @@ export default function RootLayout({
                 //   "https://www.instagram.com/sameh6051/"
                 // ],
                 // "image": `${siteUrl}/image.png`,
-                // "telephone": "90998489"
+                // "telephone": `${process.env.NEXT_PUBLIC_PHONE}`
               },
             )
           }}

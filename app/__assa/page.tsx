@@ -22,7 +22,7 @@ export const generateMetadata = async ({
     const title = titles[_id as keyof typeof titles];
 
     return {
-        title: `صباغ الكويت - 90998489 - صباغ شاطر ورخيص - ${title}`,
+        title: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - ${title}`,
         keywords: `صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار, ${title}`,
     };
 }
@@ -33,7 +33,7 @@ const Page = ({ params: { id } }: { params: { id: string } }) => {
     return (
         <Container maxWidth="lg">
             <Stack my={5} spacing={3} alignItems={"center"}>
-                <Typography color='primary.main' component={"h1"} variant='h1' fontSize={35}>{titles[_id as keyof typeof titles]} | 90998489</Typography>
+                <Typography color='primary.main' component={"h1"} variant='h1' fontSize={35}>{titles[_id as keyof typeof titles]} | {process.env.NEXT_PUBLIC_PHONE}</Typography>
                 <CustomLink href={"/"}>الرجوع الي القائمة الرئسية </CustomLink>
                 <PhoneStyle />
                 {/* <LinksContent id={id} /> */}

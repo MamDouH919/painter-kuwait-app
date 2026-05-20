@@ -43,13 +43,13 @@ const PhoneStyle = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     title="mobile"
-                    href={`tel:+96590998489`}
+                    href={`tel:+965${process.env.NEXT_PUBLIC_PHONE}`}
                 >
-                    <Fab size='medium' className={classes.messengerIcon} aria-label="messenger">
+                    <Fab size='medium' className={classes.messengerIcon} aria-label="phone">
                         <FaPhone />
                     </Fab>
                 </Link>
-                <Typography fontSize={25} color={"primary.main"}>90998489</Typography>
+                <Typography fontSize={25} color={"primary.main"}>{process.env.NEXT_PUBLIC_PHONE}</Typography>
             </Stack>
         </Root>
     )

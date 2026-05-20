@@ -14,7 +14,7 @@ const classes = {
   whatsappIcon: `${PREFIX}-whatsappIcon`,
   toTop: `${PREFIX}-toTop`,
   visible: `${PREFIX}-visible`,
-  tiktokIcon: `${PREFIX}-tiktokIcon`,
+  instagramIcon: `${PREFIX}-instagramIcon`,
 };
 
 const StyledIconButton = styled(Stack)(({ theme }) => ({
@@ -45,7 +45,7 @@ const StyledIconButton = styled(Stack)(({ theme }) => ({
       backgroundColor: "#0b7acc",
     },
   },
-  [`& .${classes.tiktokIcon}`]: {
+  [`& .${classes.instagramIcon}`]: {
     backgroundColor: "#cc2366",
     color: "#FFF",
     fontSize: "30px",
@@ -104,7 +104,7 @@ const SocialIcons: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
         title="mobile"
-        href={`tel:+96590998489`}
+        href={`tel:+965${process.env.NEXT_PUBLIC_PHONE}`}
       >
         <Fab className={classes.messengerIcon} aria-label="messenger">
           <FaPhone />
@@ -114,22 +114,22 @@ const SocialIcons: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
         title="whatsApp"
-        href={`https://wa.me/+96590998489`}
+        href={`https://wa.me/+965${process.env.NEXT_PUBLIC_PHONE}`}
       >
         <Fab className={classes.whatsappIcon} aria-label="whatsapp">
           <FaWhatsapp />
         </Fab>
       </Link>
-      <Link
+      {process.env.NEXT_PUBLIC_INSTAGRAM && <Link
         target="_blank"
         rel="noopener noreferrer"
-        title="Tiktok"
-        href={`https://www.instagram.com/sameh6051?utm_source=qr&igsh=dHg3dWpjNXJ2ejE1`}
+        title="instagram"
+        href={process.env.NEXT_PUBLIC_INSTAGRAM}
       >
-        <Fab className={classes.tiktokIcon} aria-label="whatsapp">
+        <Fab className={classes.instagramIcon} aria-label="instagram">
           <FaInstagram />
         </Fab>
-      </Link>
+      </Link>}
     </StyledIconButton>
   );
 };

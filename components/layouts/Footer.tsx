@@ -68,17 +68,17 @@ const Services = () => {
             <Typography className={classes.text}>صباغ الكويت الاول في الوطن العربي</Typography>
             <Typography className={classes.text}>تواصل معنا</Typography>
             <Stack direction={"row"} spacing={2} flexWrap={"wrap"}>
-                <Link
+                {process.env.NEXT_PUBLIC_INSTAGRAM && <Link
                     target="_blank"
                     rel="noopener noreferrer"
                     title="instagram"
-                    href={`https://www.instagram.com/sameh6051/`}
+                    href={process.env.NEXT_PUBLIC_INSTAGRAM}
                 >
                     <Fab aria-label="instagram" size='small'>
                         <FaInstagram size={25} />
                     </Fab>
-                </Link>
-                <Link
+                </Link>}
+                {process.env.NEXT_PUBLIC_FACEBOOK && <Link
                     target="_blank"
                     rel="noopener noreferrer"
                     title="tiktok"
@@ -87,7 +87,7 @@ const Services = () => {
                     <Fab aria-label="instagram" size='small'>
                         <FaTiktok size={25} />
                     </Fab>
-                </Link>
+                </Link>}
             </Stack>
             <Stack direction={"row"} spacing={1} alignItems={"center"} flexWrap={"wrap"} justifyContent={"center"}>
                 <FaRegCopyright className={classes.text} />

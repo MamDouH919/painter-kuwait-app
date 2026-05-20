@@ -9,7 +9,7 @@ import { ImageStyle } from '@/components/layouts/ImageStyle'
 const title = "معلم صباغ في الكويت"
 
 export const metadata: Metadata = {
-    title: `صباغ الكويت - 90998489 - صباغ شاطر ورخيص - ${title}`,
+    title: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - ${title}`,
     keywords: `صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار, ${title}`,
 }
 
@@ -17,7 +17,7 @@ const Page = () => {
     return (
         <Container maxWidth="lg">
             <Stack my={5} spacing={3} alignItems={"center"}>
-                <Typography color='primary.main' component={"h1"} variant='h1' fontSize={35} textAlign={"center"}>{title} | 90998489</Typography>
+                <Typography color='primary.main' component={"h1"} variant='h1' fontSize={35} textAlign={"center"}>{title} | {process.env.NEXT_PUBLIC_PHONE}</Typography>
                 <CustomLink href={"/"}>الرجوع الي القائمة الرئسية </CustomLink>
                 <PhoneStyle />
                 <Stack alignItems="center" spacing={2}>
@@ -25,7 +25,7 @@ const Page = () => {
 
                     <Stack spacing={2} alignItems="center">
                         <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
-                            معلم صباغ محترف لخدمات الطلاء المنزلي - 90998489
+                            معلم صباغ محترف لخدمات الطلاء المنزلي - {process.env.NEXT_PUBLIC_PHONE}
                         </Typography>
                         <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
                             هل تتساءل عن السر وراء جمال جدران المنزل المزهر بالألوان الجذابة؟ الإجابة هي وجود معلم صباغ محترف وراء ذلك. هذا المعلم يساعدك في تحويل جدرانك إلى لوحة فنية رائعة. إذا كنت ترغب في إعطاء منزلك أو مكتبك لمسة جديدة ومتميزة، فلا تتردد في الاستعانة بخدمات معلم صباغ محترف. سنقدم لك أفضل الحلول للصباغة بأحدث التقنيات والألوان الزاهية. دع جدرانك تعبر عن ذوقك الرفيع بخبرتنا في الدهانات والصباغة. سواء كنت تريد تجديد منزلك أو مكتبك، معلم صباغ محترف هو الحل الأمثل. نقدم خدمات صباغة متكاملة تناسب جميع الأذواق والميزانيات. اعتمد علينا لتحويل أحلامك إلى واقع بلمسة فنية رائعة. لا تتردد في التواصل معنا لاستشارة معلم صباغ محترف للقيام بعملية الصباغة بشكل احترافي. سنيساعدك في اختيار الألوان المناسبة وتقديم أفضل الحلول لإنجاز المشروع بكفاءة عالية.

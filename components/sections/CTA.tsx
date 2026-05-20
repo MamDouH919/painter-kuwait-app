@@ -64,7 +64,7 @@ const Cta = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     title="whatsApp"
-                    href={`https://wa.me/+96590998489`}
+                    href={`https://wa.me/+965${process.env.NEXT_PUBLIC_PHONE}`}
                 >
                     <StyledButton
                         size="large"
