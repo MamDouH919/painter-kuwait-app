@@ -11,6 +11,9 @@ const title = "دهانات الكويت"
 export const metadata: Metadata = {
     title: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - ${title}`,
     keywords: `صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار, ${title}`,
+    alternates: {
+        canonical: `${process.env.NEXT_PUBLIC_APP_SITE}/dihanat-alkuayt`,
+    }
 }
 
 const Page = () => {
