@@ -11,6 +11,10 @@ const title = "معلم صباغ في الكويت"
 export const metadata: Metadata = {
     title: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - ${title}`,
     keywords: `صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار, ${title}`,
+    description: `معلم صباغ في الكويت في الكويت - خدمات صباغة ودهانات داخلية وخارجية باحترافية وبأفضل الأسعار. اتصل الآن على ${process.env.NEXT_PUBLIC_PHONE}`,
+    openGraph: {
+        url: `${process.env.NEXT_PUBLIC_APP_SITE}/muealim-sabaagh-bi-alkuayt`,
+    },
     alternates: {
         canonical: `${process.env.NEXT_PUBLIC_APP_SITE}/muealim-sabaagh-bi-alkuayt`,
     }
@@ -27,7 +31,7 @@ const Page = () => {
                     <ImageStyle src={"/Images/links-images/muealim_sabaagh_bi_alkuayt.jpg"} alt="معلم صباغ الكويت" />
 
                     <Stack spacing={2} alignItems="center">
-                        <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                        <Typography component="h2" variant="h2" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                             معلم صباغ محترف لخدمات الطلاء المنزلي - {process.env.NEXT_PUBLIC_PHONE}
                         </Typography>
                         <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>

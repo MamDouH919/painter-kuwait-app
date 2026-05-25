@@ -10,6 +10,10 @@ const title = "صباغ شاطر"
 export const metadata: Metadata = {
     title: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - ${title}`,
     keywords: `صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار, ${title}`,
+    description: `صباغ شاطر في الكويت - خدمات صباغة ودهانات داخلية وخارجية باحترافية وبأفضل الأسعار. اتصل الآن على ${process.env.NEXT_PUBLIC_PHONE}`,
+    openGraph: {
+        url: `${process.env.NEXT_PUBLIC_APP_SITE}/sabaagh-shatir`,
+    },
     alternates: {
         canonical: `${process.env.NEXT_PUBLIC_APP_SITE}/sabaagh-shatir`,
     }
@@ -25,7 +29,7 @@ const Page = () => {
                 <Stack alignItems="center" spacing={2}>
                     <ImageStyle src={"/Images/links-images/sabaagh-shatir.jpeg"} alt="صباغ شاطر - صباغ ممتاز - صباغ الكويت" />
 
-                    <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                    <Typography component="h2" variant="h2" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                         صباغ شاطر - صباغ ممتاز - <strong>صباغ الكويت</strong> - {process.env.NEXT_PUBLIC_PHONE}
                     </Typography>
                     <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>

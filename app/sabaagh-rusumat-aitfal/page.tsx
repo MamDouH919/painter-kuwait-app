@@ -10,6 +10,10 @@ const title = "صباغ رسومات اطفال"
 export const metadata: Metadata = {
     title: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - ${title}`,
     keywords: `صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار, ${title}`,
+    description: `صباغ رسومات اطفال في الكويت - خدمات صباغة ودهانات داخلية وخارجية باحترافية وبأفضل الأسعار. اتصل الآن على ${process.env.NEXT_PUBLIC_PHONE}`,
+    openGraph: {
+        url: `${process.env.NEXT_PUBLIC_APP_SITE}/sabaagh-rusumat-aitfal`,
+    },
     alternates: {
         canonical: `${process.env.NEXT_PUBLIC_APP_SITE}/sabaagh-rusumat-aitfal`,
     }
@@ -25,7 +29,7 @@ const Page = () => {
                 <Stack alignItems="center" spacing={2}>
                     <ImageStyle src={"/Images/links-images/sabaagh_rusumat_aitfal.jpeg"} alt="صباغ رسومات اطفال صباغ ممتاز رسومات اطفال - صباغ شاطر رسومات اطفال - صباغ فني رسومات اطفال" />
 
-                    <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                    <Typography component="h2" variant="h2" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                         صباغ رسومات اطفال صباغ ممتاز رسومات اطفال - صباغ شاطر رسومات اطفال - صباغ فني رسومات اطفال - {process.env.NEXT_PUBLIC_PHONE}
                     </Typography>
                     <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>

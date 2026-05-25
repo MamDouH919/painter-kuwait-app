@@ -10,6 +10,10 @@ const title = "فني صباغ الكويت"
 export const metadata: Metadata = {
     title: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - ${title}`,
     keywords: `صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار, ${title}`,
+    description: `فني صباغ الكويت في الكويت - خدمات صباغة ودهانات داخلية وخارجية باحترافية وبأفضل الأسعار. اتصل الآن على ${process.env.NEXT_PUBLIC_PHONE}`,
+    openGraph: {
+        url: `${process.env.NEXT_PUBLIC_APP_SITE}/faniy-sabagh`,
+    },
     alternates: {
         canonical: `${process.env.NEXT_PUBLIC_APP_SITE}/faniy-sabagh`,
     }
@@ -26,7 +30,7 @@ const Page = () => {
                     <ImageStyle src={"/Images/links-images/faniy_sabagh.jpg"} alt="فني صباغ - صباغ الكويت" />
 
                     <Stack spacing={2} alignItems="center">
-                        <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                        <Typography component="h2" variant="h2" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                             فني صباغ - <strong>صباغ الكويت</strong> - {process.env.NEXT_PUBLIC_PHONE}
                         </Typography>
                         <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -35,7 +39,7 @@ const Page = () => {
                         <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
                     </Stack>
                     <Stack spacing={2} alignItems="center">
-                        <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                        <Typography component="h2" variant="h2" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                             صباغ -<strong>صباغ الكويت</strong>
                         </Typography>
                         <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>

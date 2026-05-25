@@ -11,6 +11,10 @@ const title = "صباغ ديكورات بالكويت"
 export const metadata: Metadata = {
     title: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - ${title}`,
     keywords: `صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار, ${title}`,
+    description: `صباغ ديكورات بالكويت في الكويت - خدمات صباغة ودهانات داخلية وخارجية باحترافية وبأفضل الأسعار. اتصل الآن على ${process.env.NEXT_PUBLIC_PHONE}`,
+    openGraph: {
+        url: `${process.env.NEXT_PUBLIC_APP_SITE}/dikurat-sabagh-lilkuayt`,
+    },
     alternates: {
         canonical: `${process.env.NEXT_PUBLIC_APP_SITE}/dikurat-sabagh-lilkuayt`,
     }
@@ -26,7 +30,7 @@ const Page = () => {
                 <Stack alignItems="center" spacing={2}>
                     <ImageStyle src={"/Images/links-images/dikurat_sabagh_lilkuayt.webp"} alt="ديكورات الكويت - صباغ ديكورات - صباغ ممتاز ديكورات" />
 
-                    <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                    <Typography component="h2" variant="h2" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                         ديكورات الكويت - صباغ ديكورات - صباغ ممتاز ديكورات - {process.env.NEXT_PUBLIC_PHONE}
                     </Typography>
                     <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>

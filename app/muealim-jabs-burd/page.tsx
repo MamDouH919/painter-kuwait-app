@@ -10,6 +10,10 @@ const title = "معلم جبس بورد"
 export const metadata: Metadata = {
     title: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - ${title}`,
     keywords: `صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار, ${title}`,
+    description: `معلم جبس بورد في الكويت - خدمات صباغة ودهانات داخلية وخارجية باحترافية وبأفضل الأسعار. اتصل الآن على ${process.env.NEXT_PUBLIC_PHONE}`,
+    openGraph: {
+        url: `${process.env.NEXT_PUBLIC_APP_SITE}/muealim-jabs-burd`,
+    },
     alternates: {
         canonical: `${process.env.NEXT_PUBLIC_APP_SITE}/muealim-jabs-burd`,
     }
@@ -25,7 +29,7 @@ const Page = () => {
                 <Stack alignItems="center" spacing={2}>
                     <ImageStyle src={"/Images/links-images/muealim_jabs_burd.jpg"} alt="معلم جبس بورد الكويت - جبس بورد -فني جبس بورد - جبس بورد الكويت" />
 
-                    <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                    <Typography component="h2" variant="h2" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                         معلم جبس بورد الكويت - جبس بورد -فني جبس بورد - جبس بورد الكويت - {process.env.NEXT_PUBLIC_PHONE}
                     </Typography>
                     <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
