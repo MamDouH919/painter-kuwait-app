@@ -13,6 +13,15 @@ export const metadata: Metadata = {
     description: `صباغ رخيص في الكويت - خدمات صباغة ودهانات داخلية وخارجية باحترافية وبأفضل الأسعار. اتصل الآن على ${process.env.NEXT_PUBLIC_PHONE}`,
     openGraph: {
         url: `${process.env.NEXT_PUBLIC_APP_SITE}/sabaagh-rakhis`,
+        title: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - صباغ رخيص`,
+        description: `صباغ رخيص في الكويت - خدمات صباغة ودهانات داخلية وخارجية باحترافية وبأفضل الأسعار. اتصل الآن على ${process.env.NEXT_PUBLIC_PHONE}`,
+        images: [
+            {
+                url: `${process.env.NEXT_PUBLIC_APP_SITE}/Images/links-images/sabaagh-rakhis.webp`,
+                alt: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - صباغ رخيص`,
+            },
+        ],
+        type: 'article',
     },
     alternates: {
         canonical: `${process.env.NEXT_PUBLIC_APP_SITE}/sabaagh-rakhis`,

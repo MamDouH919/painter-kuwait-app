@@ -13,6 +13,15 @@ export const metadata: Metadata = {
     description: `فني صباغ الكويت في الكويت - خدمات صباغة ودهانات داخلية وخارجية باحترافية وبأفضل الأسعار. اتصل الآن على ${process.env.NEXT_PUBLIC_PHONE}`,
     openGraph: {
         url: `${process.env.NEXT_PUBLIC_APP_SITE}/faniy-sabagh`,
+        title: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - فني صباغ الكويت`,
+        description: `فني صباغ الكويت في الكويت - خدمات صباغة ودهانات داخلية وخارجية باحترافية وبأفضل الأسعار. اتصل الآن على ${process.env.NEXT_PUBLIC_PHONE}`,
+        images: [
+            {
+                url: `${process.env.NEXT_PUBLIC_APP_SITE}/Images/links-images/faniy_sabagh.jpg`,
+                alt: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - فني صباغ الكويت`,
+            },
+        ],
+        type: 'article',
     },
     alternates: {
         canonical: `${process.env.NEXT_PUBLIC_APP_SITE}/faniy-sabagh`,

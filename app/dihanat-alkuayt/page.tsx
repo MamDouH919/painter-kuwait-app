@@ -14,6 +14,15 @@ export const metadata: Metadata = {
     description: `دهانات الكويت في الكويت - خدمات صباغة ودهانات داخلية وخارجية باحترافية وبأفضل الأسعار. اتصل الآن على ${process.env.NEXT_PUBLIC_PHONE}`,
     openGraph: {
         url: `${process.env.NEXT_PUBLIC_APP_SITE}/dihanat-alkuayt`,
+        title: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - دهانات الكويت`,
+        description: `دهانات الكويت في الكويت - خدمات صباغة ودهانات داخلية وخارجية باحترافية وبأفضل الأسعار. اتصل الآن على ${process.env.NEXT_PUBLIC_PHONE}`,
+        images: [
+            {
+                url: `${process.env.NEXT_PUBLIC_APP_SITE}/Images/links-images/dihanat_alkuayt.webp`,
+                alt: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - دهانات الكويت`,
+            },
+        ],
+        type: 'article',
     },
     alternates: {
         canonical: `${process.env.NEXT_PUBLIC_APP_SITE}/dihanat-alkuayt`,

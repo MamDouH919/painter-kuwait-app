@@ -13,6 +13,15 @@ export const metadata: Metadata = {
     description: `صباغ رخيص بالكويت في الكويت - خدمات صباغة ودهانات داخلية وخارجية باحترافية وبأفضل الأسعار. اتصل الآن على ${process.env.NEXT_PUBLIC_PHONE}`,
     openGraph: {
         url: `${process.env.NEXT_PUBLIC_APP_SITE}/sabaagh-rakhisat-bi-alkuayt`,
+        title: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - صباغ رخيص بالكويت`,
+        description: `صباغ رخيص بالكويت في الكويت - خدمات صباغة ودهانات داخلية وخارجية باحترافية وبأفضل الأسعار. اتصل الآن على ${process.env.NEXT_PUBLIC_PHONE}`,
+        images: [
+            {
+                url: `${process.env.NEXT_PUBLIC_APP_SITE}/Images/links-images/sabaagh_rakhisat_bi_alkuayt.jpg`,
+                alt: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - صباغ رخيص بالكويت`,
+            },
+        ],
+        type: 'article',
     },
     alternates: {
         canonical: `${process.env.NEXT_PUBLIC_APP_SITE}/sabaagh-rakhisat-bi-alkuayt`,

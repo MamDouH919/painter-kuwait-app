@@ -13,6 +13,15 @@ export const metadata: Metadata = {
     description: `صباغ غرف اطفال في الكويت - خدمات صباغة ودهانات داخلية وخارجية باحترافية وبأفضل الأسعار. اتصل الآن على ${process.env.NEXT_PUBLIC_PHONE}`,
     openGraph: {
         url: `${process.env.NEXT_PUBLIC_APP_SITE}/sabaagh-ghoraf-aitfal`,
+        title: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - صباغ غرف اطفال`,
+        description: `صباغ غرف اطفال في الكويت - خدمات صباغة ودهانات داخلية وخارجية باحترافية وبأفضل الأسعار. اتصل الآن على ${process.env.NEXT_PUBLIC_PHONE}`,
+        images: [
+            {
+                url: `${process.env.NEXT_PUBLIC_APP_SITE}/Images/links-images/sabaagh_buyut_aitfal.jpg`,
+                alt: `صباغ الكويت - ${process.env.NEXT_PUBLIC_PHONE} - صباغ شاطر ورخيص - صباغ غرف اطفال`,
+            },
+        ],
+        type: 'article',
     },
     alternates: {
         canonical: `${process.env.NEXT_PUBLIC_APP_SITE}/sabaagh-ghoraf-aitfal`,
